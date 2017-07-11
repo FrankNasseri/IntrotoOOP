@@ -22,10 +22,15 @@ namespace IntrotoOOP
 
         //Properties: a sort of mix between a field and a method that allow controlled access
         public string Name
-            {
+        {
             get { return this.name; }
             set { this.name = value; }
-            }
+        }
+
+        public int Age
+        {
+            get { return this.age; }
+        }
 
         //We also have Behaviors.
         //Methods - repeatable/reusable sections of code - Actions
@@ -36,14 +41,18 @@ namespace IntrotoOOP
         public Cat()
         {
             //This is an example of a default constructor. A default constructor takes no arguments/parameters
+
         }
 
+        //Can have as many constructors as you need as long as they each have a unique signature.
+        //By signature, I mean parameters in the parentheses after the constructor name.
         public Cat(string name, int age, string furColor)
         {
             this.name = name;
             this.age = age;
             this.furColor = furColor;
         }
+
         public void Eat()
         {
             if (isHungry)
