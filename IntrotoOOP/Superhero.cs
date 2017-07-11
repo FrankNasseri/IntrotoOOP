@@ -61,5 +61,22 @@ namespace IntrotoOOP
         }
 
         //2 Methods
+        public void BattleNemesis()
+        {
+            this.StrengthLevel -= 10;
+            this.HasCape = false;
+            this.costume = "tattered";
+        }
+        public void GetHealthy(string costume, int strengthLevel)
+        {
+            this.Costume = costume;
+            this.StrengthLevel = strengthLevel;
+        }
+        public void AllyGained()
+        {
+            this.StrengthLevel += 10;
+            this.HasCape = false;
+            Console.WriteLine("Thank you for being a friend.");
+        }
     }
 }
